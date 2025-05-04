@@ -3,7 +3,7 @@ import utils
 import read_csv
 
 #Use your path of data
-path = '/Users/DavidVillena/Documents/Personal/Proyectos/Mis proyectos/Country_GDP/data_gdp.csv'
+path = 'use_your_path'
 
 def run ():
     data = read_csv.read_csv(path)
