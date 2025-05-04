@@ -11,7 +11,6 @@ def get_entity(country_dic):
         '2022' : country_dic['2022'],
         '2023' : country_dic['2023'],
     }
-
     labels = entity_dic.keys()
     values = entity_dic.values()
     return labels, values
