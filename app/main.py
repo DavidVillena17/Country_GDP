@@ -2,8 +2,10 @@ import charts
 import utils
 import read_csv
 
+path = '/Users/DavidVillena/Documents/Personal/Proyectos/Mis proyectos/Country_GDP/data_gdp.csv'
+
 def run ():
-    data = read_csv.read_csv('/Users/DavidVillena/Documents/Personal/Proyectos/Mis proyectos/Country_GDP/data_gdp.csv')
+    data = read_csv.read_csv(path)
     country = entity = input('Type country --> ')
     result = utils.gdp_by_country(data, country)
 
@@ -15,15 +17,3 @@ def run ():
 
 if __name__ == '__main__':
     run()
-
-
-'''
-
-df = pd.read_csv('/Users/DavidVillena/Documents/Personal/Proyectos/Mis proyectos/Country_GDP/data_gdp.csv')
-
-#print(df.head(10))
-print(df.info())
-
-#print(df['Year'].unique())
-
-'''

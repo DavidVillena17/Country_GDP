@@ -3,10 +3,10 @@ import matplotlib.pyplot as plt
 def generate_bar_chart(labels, values, country):
     fig, ax = plt.subplots()
     plt.title(country+"'s GDP")
-    #plt.axis(['2014','2023',0,107000000000000])
     plt.xlabel('Years')
-    plt.ylabel('Million of dollars')
+    plt.ylabel('GDP (Dollars)')
     ax.bar(labels, values)
+    plt.grid(True)
     plt.show()
 
 def generate_pie_chart(labels, values):

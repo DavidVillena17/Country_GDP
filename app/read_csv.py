@@ -12,5 +12,5 @@ def read_csv (path):
         return data
 
 if __name__ == '__main__':
-    data = read_csv('/Users/DavidVillena/Documents/Personal/Proyectos/Mis proyectos/Country_GDP/data_gdp.csv')
+    data = read_csv('your_path')
     print(data)

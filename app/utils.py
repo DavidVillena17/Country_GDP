@@ -1,5 +1,4 @@
 
-
 def get_entity(country_dic):
     entity_dic = {
         '2015' : country_dic['2015'],
@@ -20,10 +19,3 @@ def get_entity(country_dic):
 def gdp_by_country(data, country):
     result = list(filter(lambda item: item['Country Name'] == country, data))
     return result
-'''
-data = read_csv.read_csv('/Users/DavidVillena/Documents/Personal/Proyectos/Mis proyectos/Country_GDP/data_gdp.csv')
-country = input('Ingrese el país a consultar: ')
-result = gdp_by_country(data, country)
-print(result)
-
-'''
