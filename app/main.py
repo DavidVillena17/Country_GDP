@@ -1,20 +1,24 @@
-import charts
 import utils
-import read_csv
 
-#Use your path of data
-path = 'use_your_path'
 
 def run ():
-    data = read_csv.read_csv(path)
-    country = entity = input('Type country --> ')
-    result = utils.gdp_by_country(data, country)
+    print('Graph GDP values by country trough years \n Since 1960 - 2023')
 
-    if len(result)>0:
-        country = result[0]
-        labels, values = utils.get_entity(country)
-        charts.generate_bar_chart(labels, values, entity)
+    country = input('Type country: ')
+    init_year = int(input('Type init year: '))
+    final_year = int(input('Type final year: '))
+    
+    
+    if 1960 <= init_year < final_year <= 2023:
+        utils.generate_chart(country, init_year, final_year)
+    else:
+        print("Type valid values, try again")
+        print('-*' * 50)
+        run()
+        
 
 
 if __name__ == '__main__':
     run()
+
+
